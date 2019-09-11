@@ -63,6 +63,12 @@ Last Update: Dec 05, 2018
   margin: 0;
   padding: 0; }
 
+:root {
+  --primary-color: #FFCA18;
+  --primary-clear-color: #FFEEB5;
+  --secondary-color: #101439;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -391,7 +397,10 @@ ul {
   #scrollUp:focus, #scrollUp:hover {
     background-color: #000; }
 
-.dento-btn {
+
+/* Real Pacífico Button */
+
+.rp-btn {
   position: relative;
   z-index: 1;
   min-width: 170px;
@@ -402,37 +411,39 @@ ul {
   display: inline-block;
   padding: 0 20px;
   text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+  text-transform: capitalize;
+  color: var(--secondary-color);
   border-radius: 2px;
-  background-color: #ab0900;
+  background-color: var(--primary-color);
   -webkit-transition: all 500ms;
   -o-transition: all 500ms;
   transition: all 500ms;
-  border: 2px solid #ab0900; }
+  border: 2px solid var(--primary-color);
+}
   @media only screen and (max-width: 767px) {
-    .dento-btn {
+    .rp-btn {
       min-width: 120px;
       padding: 0 10px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .dento-btn {
+    .rp-btn {
       min-width: 170px;
       padding: 0 20px; } }
-  .dento-btn.active, .dento-btn:focus, .dento-btn:hover {
-    box-shadow: none;
-    background-color: transparent;
-    color: #ab0900; }
-  .dento-btn.btn-2:focus, .dento-btn.btn-2:hover {
+.rp-btn.active, .rp-btn:focus, .rp-btn:hover {
+  box-shadow: none;
+  background-color: var(--primary-clear-color);
+  color: var(--secondary-color);
+}
+  .rp-btn.btn-2:focus, .rp-btn.btn-2:hover {
     background-color: #ffffff;
     color: #ab0900; }
-  .dento-btn.booking-btn {
+  .rp-btn.booking-btn {
     color: #ffffff !important;
     font-weight: 600;
     min-width: 140px;
     height: 40px;
     line-height: 36px;
     font-size: 12px; }
-    .dento-btn.booking-btn:focus, .dento-btn.booking-btn:hover {
+    .rp-btn.booking-btn:focus, .rp-btn.booking-btn:hover {
       font-size: 12px;
       font-weight: 600;
       background-color: #ffffff;
@@ -455,60 +466,97 @@ ul {
     left: 0;
     z-index: 600; }
 
+
+/*Top Banner*/
+
 .top-header-area {
   position: relative;
   z-index: 1;
   height: 40px;
-  background-color: #ab0900; }
-  .top-header-area .top-header-content a {
-    display: inline-block;
-    font-size: 12px;
-    color: white; }
-    .top-header-area .top-header-content a i {
-      color: #ab0900;
-      margin-right: 5px; }
-    .top-header-area .top-header-content a:last-child {
-      margin-left: 30px; }
-      @media only screen and (max-width: 767px) {
-        .top-header-area .top-header-content a:last-child {
-          margin-left: 15px; } }
-    @media only screen and (max-width: 767px) {
-      .top-header-area .top-header-content a span {
-        display: none; } }
-  .top-header-area .top-header-social-info a {
-    color: white;
-    display: inline-block;
-    font-size: 14px;
-    margin-left: 10px; }
-    .top-header-area .top-header-social-info a:focus, .top-header-area .top-header-social-info a:hover {
-      color: #ab0900; }
+  background-color: var(--secondary-color);
+}
+.top-header-area .top-header-content a {
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+}
+.top-header-area .top-header-content a i {
+  color: #ab0900;
+  margin-right: 5px;
+}
+.top-header-area .top-header-content a:last-child {
+  margin-left: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .top-header-area .top-header-content a:last-child {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-header-area .top-header-content a span {
+    display: none;
+  }
+}
+.top-header-area .top-header-social-info a {
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.top-header-area .top-header-social-info a:focus, .top-header-area .top-header-social-info a:hover {
+  color: #ab0900;
+}
+
+
+/*NavBar*/
 
 .classy-nav-container {
-  background-color: transparent; }
-  .classy-nav-container .classy-navbar {
-    height: 90px;
-    padding: 0; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .classy-nav-container .classy-navbar {
-        height: 80px; } }
-    @media only screen and (max-width: 767px) {
-      .classy-nav-container .classy-navbar {
-        height: 70px; } }
-    @media only screen and (max-width: 767px) {
-      .classy-nav-container .classy-navbar .nav-brand {
-        max-width: 45%;
-        margin-right: 15px; } }
-    .classy-nav-container .classy-navbar .classynav ul li a {
-      padding: 0 15px;
-      font-weight: 600;
-      font-size: 14px;
-      text-transform: uppercase; }
-      .classy-nav-container .classy-navbar .classynav ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li a:hover {
-        color: #ab0900; }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .classy-nav-container .classy-navbar .classynav ul li a {
-          padding: 0 10px;
-          font-size: 13px; } }
+  background-color: var(--primary-color);
+}
+.classy-nav-container .classy-navbar {
+  height: 70px;
+  padding: 0;
+}
+.classy-nav-container .classy-navbar .nav-brand {
+  max-width: 6%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .classy-nav-container .classy-navbar .nav-brand {
+    max-width: 8%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .classy-nav-container .classy-navbar .nav-brand {
+    max-width: 10%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .classy-nav-container .classy-navbar .nav-brand {
+    max-width: 12%;
+    margin-right: 15px;
+  }
+}
+
+
+/*NavBar - Optins container*/
+
+.classy-nav-container .classy-navbar .classynav ul li a {
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+.classy-nav-container .classy-navbar .classynav ul li a:focus,
+.classy-nav-container .classy-navbar .classynav ul li a:hover {
+  color: var(--secondary-color);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .classy-nav-container .classy-navbar .classynav ul li a {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+}
     .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
       font-size: 12px;
       text-transform: capitalize; }
