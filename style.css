@@ -374,7 +374,7 @@ ul {
   .section-heading .line {
     width: 70px;
     height: 4px;
-    background-color: #ab0900; }
+    background-color: var(--primary-color); }
   .section-heading.text-center .line {
     margin: 0 auto; }
   .section-heading.white h2 {
@@ -880,7 +880,9 @@ ul {
   .single-skills-area h6 {
     font-size: 18px;
     display: block;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    color: var(--secondary-color);
+  }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .single-skills-area h6 {
         font-size: 14px; } }
@@ -1437,9 +1439,12 @@ ul {
       .single-footer-widget .footer-contact p i {
         display: inline-block;
         margin-right: 5px;
-        color: #ab0900; }
+        color: #ffffff; }
       .single-footer-widget .footer-contact p:last-child {
         margin-bottom: 0; }
+.iconcolor {
+  color: #ffffff;
+}
   .single-footer-widget .opening-hours {
     position: relative;
     z-index: 1; }
