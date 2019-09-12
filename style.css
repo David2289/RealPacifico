@@ -66,6 +66,7 @@ Last Update: Dec 05, 2018
 :root {
   --primary-color: #FFCA18;
   --primary-clear-color: #FFEEB5;
+  --primary-dark-color: #C99B02;
   --secondary-color: #101439;
 }
 
@@ -472,39 +473,8 @@ ul {
 .top-header-area {
   position: relative;
   z-index: 1;
-  height: 40px;
-  background-color: var(--secondary-color);
-}
-.top-header-area .top-header-content a {
-  display: inline-block;
-  font-size: 12px;
-  color: white;
-}
-.top-header-area .top-header-content a i {
-  color: #ab0900;
-  margin-right: 5px;
-}
-.top-header-area .top-header-content a:last-child {
-  margin-left: 30px;
-}
-@media only screen and (max-width: 767px) {
-  .top-header-area .top-header-content a:last-child {
-    margin-left: 15px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .top-header-area .top-header-content a span {
-    display: none;
-  }
-}
-.top-header-area .top-header-social-info a {
-  color: white;
-  display: inline-block;
-  font-size: 14px;
-  margin-left: 10px;
-}
-.top-header-area .top-header-social-info a:focus, .top-header-area .top-header-social-info a:hover {
-  color: #ab0900;
+  height: 15px;
+  background-color: var(--primary-dark-color);
 }
 
 
@@ -804,10 +774,12 @@ ul {
   position: relative;
   z-index: 1; }
   .single-service img {
+    margin: auto;
     display: block;
     margin-bottom: 15px;
     max-height: 35px; }
   .single-service h6 {
+    text-align: center;
     color: #ffffff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -818,7 +790,7 @@ ul {
       .single-service h6 {
         font-size: 13px; } }
   .single-service:focus h6, .single-service:hover h6 {
-    color: #ab0900; }
+    color: var(--primary-color); }
 
 .single-service--area {
   position: relative;
