@@ -381,23 +381,6 @@ ul {
   .section-heading.white h2 {
     color: #ffffff; }
 
-#scrollUp {
-  bottom: 50px;
-  font-size: 22px;
-  line-height: 42px;
-  right: 0;
-  width: 40px;
-  background-color: #ab0900;
-  color: #ffffff;
-  text-align: center;
-  height: 40px;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  border-radius: 2px 0 0 2px; }
-  #scrollUp:focus, #scrollUp:hover {
-    background-color: #000; }
-
 
 /* Real Pacífico Button */
 
@@ -1389,31 +1372,50 @@ ul {
 .footer-area {
   position: relative;
   z-index: 1;
-  padding-top: 100px; }
+  padding-top: 10px; }
 
 .single-footer-widget {
+  height: 300px;
   position: relative;
-  z-index: 1;
-  margin-bottom: 100px; }
+  z-index: 1; }
+
+@media only screen and (max-width: 576px) {
+  .single-footer-widget {
+    height: 200px;
+  }
+}
+
+  .single-footer-widget > a {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
   .single-footer-widget .widget-title {
     color: #ffffff;
     margin-top: 5px;
     margin-bottom: 25px;
     display: block; }
-  .single-footer-widget p {
-    color: #ffffff; }
   .single-footer-widget .footer-contact {
-    position: relative;
-    z-index: 1; }
-    .single-footer-widget .footer-contact p {
-      margin-bottom: 5px;
-      font-size: 14px; }
-      .single-footer-widget .footer-contact p i {
-        display: inline-block;
-        margin-right: 5px;
-        color: #ffffff; }
-      .single-footer-widget .footer-contact p:last-child {
-        margin-bottom: 0; }
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+    .single-footer-widget .footer-contact a {
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    .single-footer-widget .footer-contact a i {
+      display: inline-block;
+      margin-right: 5px;
+      color: #ffffff;
+    }
 .iconcolor {
   color: #ffffff;
 }
@@ -1556,5 +1558,25 @@ ul {
   .contact-form textarea.form-control {
     height: 110px;
     padding: 15px; }
+
+
+.footer-logo {
+  max-width: 30%;
+}
+@media only screen and (max-width: 576px) {
+  .footer-logo {
+    max-width: 35%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .footer-logo {
+    max-width: 55%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-logo {
+    max-width: 45%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

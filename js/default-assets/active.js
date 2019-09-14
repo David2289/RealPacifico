@@ -144,15 +144,15 @@
   //     $(".timelineBody").niceScroll();
   // }
   // :: 12.0 ScrollUp Active Code
-  if($.fn.scrollUp) {
-    dento_window.scrollUp({
-      scrollSpeed: 2000,
-      scrollText: '<i class="arrow_up"</i>'
-    });
-  }
+  // if($.fn.scrollUp) {
+  //   dento_window.scrollUp({
+  //     scrollSpeed: 2000,
+  //     scrollText: '<i class="arrow_up"</i>'
+  //   });
+  // }
   // :: 13.0 Sticky Active Code
   dento_window.on('scroll', function() {
-    if(dento_window.scrollTop() > 40) {
+    if(dento_window.scrollTop() > 15) {
       $('.main-header-area').addClass('sticky');
     } else {
       $('.main-header-area').removeClass('sticky');
