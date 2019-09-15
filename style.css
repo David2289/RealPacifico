@@ -493,26 +493,36 @@ ul {
 
 /*NavBar - Optins container*/
 
+.classy-nav-container .classy-navbar .classynav ul li {
+  width: 100px;
+}
 .classy-nav-container .classy-navbar .classynav ul li a {
-  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0px;
   font-weight: 600;
   font-size: 14px;
   color: var(--secondary-color);
   text-transform: capitalize;
 }
-.classy-nav-container .classy-navbar .classynav ul li a:focus,
-.classy-nav-container .classy-navbar .classynav ul li a:hover {
-  color: var(--secondary-color);
-}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
-    padding: 0 10px;
+    padding: 0 0px;
     font-size: 13px;
   }
 }
-    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
-      font-size: 12px;
-      text-transform: capitalize; }
+@media only screen and (max-width: 991px) {
+  .classy-nav-container .classy-navbar .classynav ul li {
+    padding: 0 0px;
+    width: 100%;
+    background-color: var(--primary-clear-color);
+  }
+}
+.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .classy-nav-container .classy-navbar-toggler {
       -webkit-box-ordinal-group: 200;
@@ -1377,21 +1387,49 @@ ul {
 .single-footer-widget {
   height: 300px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+}
 
 @media only screen and (max-width: 576px) {
   .single-footer-widget {
     height: 200px;
+    position: relative;
   }
 }
 
-  .single-footer-widget > a {
+.single-footer-widget > img {
+  max-width: 30%;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-footer-widget > img {
+    max-width: 45%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-footer-widget > img {
+    max-width: 55%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .single-footer-widget > img {
+    max-width: 35%;
     position: absolute;
-    margin: 0;
+    margin: 0 auto;
+    left: 30%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+}
+
 
   .single-footer-widget .widget-title {
     color: #ffffff;
@@ -1559,24 +1597,5 @@ ul {
     height: 110px;
     padding: 15px; }
 
-
-.footer-logo {
-  max-width: 30%;
-}
-@media only screen and (max-width: 576px) {
-  .footer-logo {
-    max-width: 35%;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .footer-logo {
-    max-width: 55%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer-logo {
-    max-width: 45%;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
