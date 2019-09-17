@@ -457,6 +457,11 @@ ul {
   left: 0;
   z-index: 600;
 }
+#sticky-phantom {
+  height: 70px;
+  display: none;
+  visibility: hidden;
+}
 
 
 /*Top Banner*/
