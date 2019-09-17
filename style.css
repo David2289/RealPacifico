@@ -64,13 +64,16 @@ Last Update: Dec 05, 2018
   padding: 0; }
 
 :root {
+  --background-color: #FFFFF6;
   --primary-color: #FFCA18;
   --primary-clear-color: #FFEEB5;
   --primary-dark-color: #C99B02;
   --secondary-color: #101439;
+  --secondary-clear-color: #7278A8;
 }
 
 body {
+  background-color: var(--background-color);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px; }
@@ -132,19 +135,21 @@ ul {
 
 .bg-gradient-overlay {
   position: relative;
-  z-index: 1; }
-  .bg-gradient-overlay::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: #2c455d;
-    background: -webkit-linear-gradient(to right, #2c455d, #00012c);
-    background: linear-gradient(to right, #2c455d, #00012c);
-    opacity: 0.85; }
+  z-index: 1;
+}
+.bg-gradient-overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--secondary-color);
+  /* background: -webkit-linear-gradient(to right, #2c455d, #00012c);
+  background: linear-gradient(to right, #2c455d, #00012c); */
+  opacity: 0.6;
+}
 
 .bg-img {
   background-position: center center;
@@ -439,16 +444,19 @@ ul {
   width: 100%;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
-  transition-duration: 500ms; }
-  .header-area .main-header-area.sticky {
-    top: 0;
-    width: 100%;
-    position: fixed;
-    background-color: #ffffff;
-    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2);
-    border-bottom: none;
-    left: 0;
-    z-index: 600; }
+  transition-duration: 500ms;
+  box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2);
+}
+.header-area .main-header-area.sticky {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  left: 0;
+  z-index: 600;
+}
 
 
 /*Top Banner*/
@@ -535,6 +543,10 @@ ul {
       order: 199;
       margin-left: 15px; } }
 
+
+
+
+/***** CUSTOM SLIDER *****/
 .welcome-welcome-slide {
   position: relative;
   z-index: 2;
@@ -550,41 +562,184 @@ ul {
     .welcome-welcome-slide {
       height: 600px; } }
 
+.custom_slider {
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+.custom_slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+}
+
+.custom_slide_title {
+	position:absolute;
+	margin:0;
+	font-size:45px;
+  color: white;
+	top:120px;
+	left: 7%;
+	font-family: "HelveticaNeue-Thin";
+  z-index: 10;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .custom_slide_title {
+    font-size:35px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom_slide_title {
+    font-size:30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .custom_slide_title {
+    font-size:25px;
+  }
+}
+
+.custom_slide_subtitle {
+	width: 60%;
+	position: absolute;
+	font-size: 25px;
+  color: white;
+	top: 260px;
+	right: 10%;
+  z-index: 10;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .custom_slide_subtitle {
+    width: 65%;
+    right: 8%;
+    font-size:22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom_slide_subtitle {
+    width: 70%;
+    right: 6%;
+    font-size:18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .custom_slide_subtitle {
+    width: 78%;
+    right: 5%;
+    font-size:16px;
+  }
+}
+
+.custom_slider_layer_over {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	z-index: 20;
+}
+
+
+
+/*BURBUJAS*/
+.bubbles_bar_container {
+	height:50px;
+  width: 100%;
+	/* background: rgb(16, 20, 57, 0.3); */
+	margin:0px auto;
+  position:relative;
+	top:550px;
+  bottom: 0;
+}
+.bubbles_container {
+	height:20px;
+	width:120px;
+	margin:auto;
+	position:relative;
+	top:15px;
+  z-index: 40;
+}
+.bubbles_container div {
+	display:block;
+	height:20px;
+	width:40px;
+	float:left;
+	position:relative;
+}
+.bubble_under {
+	position:absolute;
+	display:block;
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	float:left;
+	margin:0px 14px;
+	border: 1px solid var(--primary-clear-color);
+}
+.bubble_over {
+	position:absolute;
+	display:block;
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	float:left;
+	margin:0px 14px;
+	background: var(--primary-color);
+	opacity:0;
+	visibility:hidden;
+}
+.bubble_under:hover {
+	cursor:pointer;
+	background: var(--primary-clear-color);
+}
+
+
+
 .welcome-text {
   position: relative;
   z-index: 1; }
+.welcome-text h2 {
+  font-size: 55px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: block;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .welcome-text h2 {
-    font-size: 55px;
-    color: #ffffff;
-    margin-bottom: 30px;
-    display: block;
-    text-transform: capitalize; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .welcome-text h2 {
-        font-size: 42px;
-        margin-bottom: 20px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .welcome-text h2 {
-        font-size: 36px;
-        margin-bottom: 20px; } }
-    @media only screen and (max-width: 767px) {
-      .welcome-text h2 {
-        font-size: 24px; } }
+    font-size: 42px;
+    margin-bottom: 20px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .welcome-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px; } }
+@media only screen and (max-width: 767px) {
+  .welcome-text h2 {
+    font-size: 24px; } }
+.welcome-text p {
+font-size: 20px;
+color: #ffffff;
+margin-bottom: 40px; }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .welcome-text p {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 40px; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .welcome-text p {
-        font-size: 18px;
-        margin-bottom: 30px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .welcome-text p {
-        font-size: 16px;
-        margin-bottom: 30px; } }
-    @media only screen and (max-width: 767px) {
-      .welcome-text p {
-        font-size: 16px; } }
+    font-size: 18px;
+    margin-bottom: 30px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .welcome-text p {
+    font-size: 16px;
+    margin-bottom: 30px; } }
+@media only screen and (max-width: 767px) {
+  .welcome-text p {
+    font-size: 16px; } }
+
+
 
 .testimonials-area {
   position: relative;

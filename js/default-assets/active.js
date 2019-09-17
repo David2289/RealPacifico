@@ -154,8 +154,10 @@
   dento_window.on('scroll', function() {
     if(dento_window.scrollTop() > 15) {
       $('.main-header-area').addClass('sticky');
+      $('#custom_slider_container').css({ top: '70px' }); //Altura del header
     } else {
       $('.main-header-area').removeClass('sticky');
+      $('#custom_slider_container').css({ top: '0px' });
     }
   });
 
