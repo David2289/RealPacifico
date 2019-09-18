@@ -1103,7 +1103,7 @@ margin-bottom: 40px; }
 .breadcumb-area {
   position: relative;
   z-index: 1;
-  height: 200px; }
+  height: 300px; }
   @media only screen and (max-width: 767px) {
     .breadcumb-area {
       height: 130px; } }
