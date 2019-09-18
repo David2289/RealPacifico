@@ -1036,7 +1036,7 @@ margin-bottom: 40px; }
   z-index: 1; }
   .single-cta i {
     font-size: 50px;
-    color: #ab0900;
+    color: var(--primary-dark-color);
     margin-bottom: 15px;
     display: block; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
