@@ -251,6 +251,10 @@ ul {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+  .section-padding-50-150 {
+    padding-top: 50px;
+    padding-bottom: 150px; }
+
 .section-padding-0-100 {
   padding-top: 0;
   padding-bottom: 100px; }
@@ -904,24 +908,24 @@ margin-bottom: 40px; }
   position: relative;
   z-index: 1; }
 
-.dento-price-table {
+.rp-price-table {
   position: relative;
   z-index: 1; }
-  .dento-price-table table thead tr > td,
-  .dento-price-table table thead tr > th {
-    background-color: #ab0900;
+  .rp-price-table table thead tr > td,
+  .rp-price-table table thead tr > th {
+    background-color: var(--secondary-color);
     color: #ffffff; }
-  .dento-price-table table tr > td,
-  .dento-price-table table tr > th {
+  .rp-price-table table tr > td,
+  .rp-price-table table tr > th {
     padding: 15px 30px;
     border-radius: 3px;
-    border: 4px solid #ffffff;
+    border: 4px solid var(--background-color);
     background-color: #f4f4f4;
     font-weight: 600;
     color: #707070; }
     @media only screen and (max-width: 767px) {
-      .dento-price-table table tr > td,
-      .dento-price-table table tr > th {
+      .rp-price-table table tr > td,
+      .rp-price-table table tr > th {
         padding: 10px 15px;
         font-size: 12px; } }
 
