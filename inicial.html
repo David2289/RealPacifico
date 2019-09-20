@@ -11,7 +11,7 @@
   <title>Cirugía Bucal - Clínica Dental Bazán Nuevo Chimbote Peru</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="./img/core-img/favicon.ico">
+  <link rel="icon" href="./img/core-img/rp_favicon.png">
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -30,27 +30,6 @@
   <header class="header-area">
     <!-- Top Header Area -->
     <div class="top-header-area">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <!-- Top Content -->
-          <div class="col-6 col-md-9 col-lg-8">
-            <div class="top-header-content">
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Av. Argentina, Urb. Las Gardenias J5-25 - Nuevo Chimbote"><i class="fa fa-map-marker"></i> <span>Av. Argentina, Urb. Las Gardenias J5-25 - Nuevo Chimbote, 943-679751 Perú</span></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info@clinicadentalbazan.com.pe"><i class="fa fa-envelope"></i> <span>info@clinicadentalbazan.com.pe</span></a>
-            </div>
-          </div>
-          <!-- Top Header Social Info -->
-          <div class="col-6 col-md-3 col-lg-4">
-            <div class="top-header-social-info text-right">
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Top Header End -->
 
@@ -60,10 +39,8 @@
         <div class="container">
           <!-- Classy Menu -->
           <nav class="classy-navbar justify-content-between" id="dentoNav">
-
             <!-- Logo -->
-            <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
-
+            <a class="nav-brand" href="index.html"><img src="./img/core-img/rp_logo.png" alt=""></a>
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
               <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -71,19 +48,17 @@
 
             <!-- Menu -->
             <div class="classy-menu">
-
               <!-- Close Button -->
               <div class="classycloseIcon">
                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
               </div>
-
               <!-- Nav Start -->
               <div class="classynav">
                 <ul id="nav">
                   <li><a href="index.html">Inicio</a></li>
                   <li><a href="nosotros.html">Nosotros</a></li>
                   <li><a href="servicio.html">Servicios</a></li>
-                  <li><a href="obstetricia.html">Obstetricia - Ecografía</a></li>
+                  <li><a href="galeria.html">Galería</a></li>
                   <li><a href="contacto.html">Contacto</a></li>
                 </ul>
               </div>
@@ -97,6 +72,8 @@
       </div>
     </div>
   </header>
+  <!-- Trquiñuela para evitar el salto de todo el contenido al escrollear (cuando el header pasa de relative a fixed) -->
+  <div id="sticky-phantom"></div>
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Breadcrumb Area Start ***** -->
@@ -104,7 +81,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title">Ortodoncia</h2>
+          <p class="title">Sección Inicial</p>
         </div>
       </div>
     </div>
@@ -115,8 +92,8 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Ortodoncia</li>
+              <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Servicios - Inicial</li>
             </ol>
           </nav>
         </div>
@@ -135,9 +112,9 @@
             <img src="./img/bg-img/31.jpg" alt="">
 
             <h2 class="post-title">Ortodoncia</h2>
-            <div class="post-meta">              
+            <div class="post-meta">
             </div>
-            <p>Es la rama de la Odontología que permite realizar  el estudio, prevención, diagnóstico y tratamiento de las anomalías de forma, posición, relación y función de las estructuras dentomaxilofaciales.</p>            
+            <p>Es la rama de la Odontología que permite realizar  el estudio, prevención, diagnóstico y tratamiento de las anomalías de forma, posición, relación y función de las estructuras dentomaxilofaciales.</p>
             <blockquote cite="" class="dento-blockquote d-flex">
               <div class="icon">
                 <!--<i class="fa fa-quote-left"></i>-->
@@ -214,7 +191,7 @@
 <!--          <div class="contact-form mt-30">
             <h5 class="mb-30">Leave A Reply</h5>
 
-             Form 
+             Form
             <form action="#" method="post">
               <div class="row">
                 <div class="col-lg-6">
@@ -251,7 +228,7 @@
             <div class="single-widget-area catagories-widget">
               <h5 class="widget-title">Servicios</h5>
 
-               <!--catagories list--> 
+               <!--catagories list-->
               <ul class="catagories-list">
                 <li><a href="ortodoncia.html">Ortodoncia</a></li>
                 <li><a href="cirugiabucal.html">Cirugía Bucal</a></li>
@@ -377,58 +354,23 @@
     <div class="container">
       <div class="row">
         <!-- Single Footer Widget -->
-        <div class="col-12 col-sm-6 col-lg-6">
+        <div id="footer_block_1" class="col-12 col-sm-6 col-lg-6">
           <div class="single-footer-widget">
-            <a href="./index.html" class="d-block mb-4"><img src="./img/core-img/logo.png" alt=""></a>
-            <p> La Clínica Dental Bazán ofrece servicios odontológicos preventivos y avanzados de excelencia y calidad en las especialidades de Periodoncia,  Estética, Ortodoncia e Implantología Dental.</p>
             <div class="footer-contact">
-              <p><i class="icon_pin"></i>Av. Argentina, Urb. Las Gardenias J5-25 - Nuevo Chimbote, Perú</p>
-              <p><i class="icon_phone"></i> 943-679751</p>
-              <p><i class="icon_mail"></i> info@clinicadentalbazan.com.pe</p>
+              <a href="#"><i class="icon_phone"></i>+51 43 310620</a><br><br>
+              <a href="#"><i class="icon_mail"></i> info@clinicadentalbazan.com.pe</a><br><br>
+              <a href="https://www.facebook.com/pg/colegiorealpacifico/" data-toggle="tooltip" data-placement="bottom" target="_blank"><i class="fa fa-facebook"></i>&nbsp; &nbsp;Facebook</a><br><br>
+              <a href="#"><i class="icon_pin"></i>&nbsp;Av. Pacífico 578, Nuevo Chimbote (02711) - Perú</a>
             </div>
           </div>
         </div>
 
         <!-- Single Footer Widget -->
-        <div class="col-12 col-sm-6 col-lg" style="display:none;">
+        <div id="footer_block_2" class="col-12 col-sm-6 col-lg-6">
           <div class="single-footer-widget">
-            <!-- Widget Title -->
-            <h5 class="widget-title">Horarios de Atención</h5>
-
-            <!-- Opening Hours -->
-            <ul class="opening-hours">
-              <li><span>Mon-Wed</span> <span>8.00-18.00</span></li>
-              <li><span>Thu-Fri</span> <span>8.00-17.00</span></li>
-              <li><span>Sat</span> <span>9.00-17.00</span></li>
-              <li><span>Sun</span> <span>10.00-17.00</span></li>
-              <li><span>Holiday</span> <span>Closed</span></li>
-            </ul>
+            <img src="./img/core-img/rp_logo_blanco.png" alt="">
           </div>
         </div>
-
-        <!-- Single Footer Widget -->
-        <div class="col-12 col-sm-6 col-lg-6">
-          <div class="single-footer-widget">
-            <!-- Widget Title -->
-            <h5 class="widget-title">Enlaces Rápidos</h5>
-
-            <!-- Quick Links Nav -->
-            <nav>
-              <ul class="quick-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>                
-                <li><a href="servicio.html">Servicios</a></li>
-                <li><a href="ortodoncia.html">Ortodoncia</a></li>
-                <li><a href="cirugiabucal.html">Cirugía Bucal</a></li>
-                <li><a href="implantesdentales.html">Implantes Dentales</a></li>
-                <li><a href="odontopediatria.html">Odontopediatría</a></li>
-                <li><a href="obstetricia.html">Obstetricia - Ecografía</a></li>
-                <li><a href="contacto.html">Contacto</a></li>              
-              </ul>
-            </nav>
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -447,17 +389,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
   </footer>
   <!-- ***** Footer Area End ***** -->
 
+
   <!-- ******* All JS ******* -->
+
+  <!-- JS Dependencies -->
+
   <!-- jQuery js -->
   <script src="js/jquery.min.js"></script>
   <!-- Popper js -->
   <script src="js/popper.min.js"></script>
   <!-- Bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- All js -->
+  <!-- GreenSock library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TimelineMax.min.js"></script>
+
+  <!-- JS Files -->
+
   <script src="js/dento.bundle.js"></script>
   <!-- Active js -->
   <script src="js/default-assets/active.js"></script>
+  <!-- Animations JS file -->
+  <script type="text/javascript" src="js/greensock/animations.js"></script>
 
 </body>
 
