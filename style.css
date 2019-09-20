@@ -1355,7 +1355,7 @@ margin-bottom: 40px; }
       .catagories-list li a {
         font-size: 14px; } }
     .catagories-list li a:focus, .catagories-list li a:hover {
-      color: #ab0900; }
+      color: var(--primary-dark-color); }
   .catagories-list li:last-child a {
     border-bottom: none; }
 
