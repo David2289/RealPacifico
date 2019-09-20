@@ -1147,7 +1147,7 @@ margin-bottom: 40px; }
     .breadcumb--con .breadcrumb .breadcrumb-item > a:hover,
     .breadcumb--con .breadcrumb .breadcrumb-item.active:focus,
     .breadcumb--con .breadcrumb .breadcrumb-item.active:hover {
-      color: #ab0900; }
+      color: var(--primary-dark-color); }
   .breadcumb--con .breadcrumb .breadcrumb-item.active {
     color: #707070; }
     .breadcumb--con .breadcrumb .breadcrumb-item.active:focus, .breadcumb--con .breadcrumb .breadcrumb-item.active:hover {
