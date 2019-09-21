@@ -7,6 +7,16 @@
 :: Created: May 16, 2018
 :: Last Updated: May 16, 2018
 ---------------------------------------------------------- */
+
+:root {
+  --background-color: #FFFFF6;
+  --primary-color: #FFCA18;
+  --primary-clear-color: #FFEEB5;
+  --primary-dark-color: #C99B02;
+  --secondary-color: #101439;
+  --secondary-clear-color: #7278A8;
+}
+
 /* Base CSS */
 body {
   font-family: "Roboto", sans-serif;
@@ -456,7 +466,7 @@ img {
   display: block;
 }
 .breakpoint-on .classy-navbar .classy-menu {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   position: fixed;
   top: 0;
   left: -310px;
@@ -533,8 +543,8 @@ img {
   border-bottom: 1px solid #f2f4f8;
 }
 .breakpoint-on .classynav>ul>li>a {
-  background-color: #FFEEB5;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--primary-clear-color);
+  border-bottom: 1px solid var(--background-color);
 }
 .breakpoint-on .classynav ul li ul.dropdown li ul li {
   margin-left: 15px;

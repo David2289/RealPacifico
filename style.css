@@ -63,15 +63,6 @@ Last Update: Dec 05, 2018
   margin: 0;
   padding: 0; }
 
-:root {
-  --background-color: #FFFFF6;
-  --primary-color: #FFCA18;
-  --primary-clear-color: #FFEEB5;
-  --primary-dark-color: #C99B02;
-  --secondary-color: #101439;
-  --secondary-clear-color: #7278A8;
-}
-
 body {
   background-color: var(--background-color);
   font-family: "Montserrat", sans-serif;
@@ -300,7 +291,7 @@ ul {
   z-index: 99999;
   top: 0;
   left: 0;
-  background-color: #ffffff; }
+  background-color: var(--background-color); }
   #preloader .preload-content {
     position: absolute;
     top: 50%;
@@ -315,38 +306,38 @@ ul {
     border: 3px;
     border-style: solid;
     border-color: transparent;
-    border-top-color: #ab0900;
+    border-top-color: var(--primary-dark-color);
     -webkit-animation: dentorotate 2400ms linear infinite;
     animation: dentorotate 2400ms linear infinite;
     z-index: 999; }
-    #preloader #dento-load:before {
-      content: "";
-      position: absolute;
-      top: 7.5px;
-      left: 7.5px;
-      right: 7.5px;
-      bottom: 7.5px;
-      border-radius: 50%;
-      border: 3px;
-      border-style: solid;
-      border-color: transparent;
-      border-top-color: #ab0900;
-      -webkit-animation: dentorotate 2700ms linear infinite;
-      animation: dentorotate 2700ms linear infinite; }
-    #preloader #dento-load:after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      right: 20px;
-      bottom: 20px;
-      border-radius: 50%;
-      border: 3px;
-      border-style: solid;
-      border-color: transparent;
-      border-top-color: #ab0900;
-      -webkit-animation: dentorotate 1800ms linear infinite;
-      animation: dentorotate 1800ms linear infinite; }
+#preloader #dento-load:before {
+  content: "";
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  right: 7.5px;
+  bottom: 7.5px;
+  border-radius: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: var(--primary-dark-color);
+  -webkit-animation: dentorotate 2700ms linear infinite;
+  animation: dentorotate 2700ms linear infinite; }
+#preloader #dento-load:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: var(--primary-dark-color);
+  -webkit-animation: dentorotate 1800ms linear infinite;
+  animation: dentorotate 1800ms linear infinite; }
 
 @-webkit-keyframes dentorotate {
   0% {
@@ -1031,7 +1022,7 @@ margin-bottom: 40px; }
   height: 2px;
   background-color: #f4f4f4; }
 
-.dento-cta-area {
+.rp-cta-area {
   position: relative;
   z-index: 1; }
 
