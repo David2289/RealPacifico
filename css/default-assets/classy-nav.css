@@ -263,7 +263,7 @@ img {
   padding: 0;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  width: 30px;
+  width: 25px;
   cursor: pointer;
 }
 .classy-navbar-toggler .navbarToggler.active span:nth-of-type(1) {
