@@ -28,10 +28,9 @@ for (var i=0; i<navbarTab.length; i++) {
 
 $(document).scroll(function () {
   var scrolled = $(window).scrollTop()
-  var parallaxScrolled = scrolled/10;
+  var parallaxScrolled = scrolled/15;
   $(".parallax").each(function(index, element) {
     var verticalPosition = 50 + parallaxScrolled;
-    // alert(verticalPosition);
     // Check if the element is in the viewport.
     var visible = isInViewport(this)
     if(visible) {
