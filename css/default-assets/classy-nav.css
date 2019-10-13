@@ -31,11 +31,6 @@ img {
   height: auto;
   max-width: 100%;
 }
-.bg-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .bg-transparent {
   background-color: transparent !important;
 }

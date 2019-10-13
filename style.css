@@ -113,16 +113,18 @@ ul {
 
 .bg-overlay {
   position: relative;
-  z-index: 1; }
-  .bg-overlay::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.5); }
+  z-index: 1;
+}
+.bg-overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .bg-gradient-overlay {
   position: relative;
@@ -143,9 +145,28 @@ ul {
 }
 
 .bg-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
+  background-repeat: repeat;
+}
+
+/*center = 50%*/
+.bg-img-horizontal-center {
+  background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
+  background-position: center 0px; /*El cuadro ajustado se puede centrar horizontalmente*/
+  background-repeat: repeat;
+}
+
+.bg-img-vertical-center {
+  background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
+  background-position: 0px center; /*El cuadro ajustado se puede centrar verticalmente*/
+  background-repeat: repeat;
+}
+
+.bg-img-center {
+  background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
+  background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
+  background-repeat: no-repeat;
+}
 
 .jarallax {
   position: relative;
@@ -575,12 +596,6 @@ ul {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
 }
 
 .custom_slide_title {
@@ -640,7 +655,7 @@ ul {
   }
 }
 
-.custom_slider_layer_over {
+.custom_slider_overlayer {
 	width: 100%;
 	height: 600px;
 	position: absolute;

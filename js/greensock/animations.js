@@ -1,5 +1,12 @@
 
 
+window.addEventListener("load", function() {
+  startSlider();
+});
+
+
+
+
 /*-------------ANIMACION NAVBAR-----------*/
 /*----------------------------------------*/
 
@@ -15,12 +22,42 @@ for (var i=0; i<navbarTab.length; i++) {
 
 
 
+
+/*------------ANIMACION PARALLAX----------*/
+/*----------------------------------------*/
+
+$(document).scroll(function () {
+  var scrolled = $(window).scrollTop()
+  var parallaxScrolled = scrolled/10;
+  $(".parallax").each(function(index, element) {
+    var verticalPosition = 50 + parallaxScrolled;
+    // alert(verticalPosition);
+    // Check if the element is in the viewport.
+    var visible = isInViewport(this)
+    if(visible) {
+      $(this).css('background-position','50% ' + parseInt(verticalPosition) + '%')
+    }
+  })
+})
+
+function isInViewport(node) {
+  var rect = node.getBoundingClientRect()
+  return (
+    (rect.height > 0 || rect.width > 0) &&
+    rect.bottom >= 0 &&
+    rect.right >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  )
+}
+
+
+
+
 /*-------------ANIMACION SLIDER-----------*/
 /*----------------------------------------*/
 
-window.addEventListener("load", function() { slider(); });
-
-function slider(){
+function startSlider() {
 
 	var automatico1 = new TimelineMax({repeat:-1});
 	var automatico2 = new TimelineMax({repeat:-1, delay:9.5});
