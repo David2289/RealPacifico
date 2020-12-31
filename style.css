@@ -523,14 +523,14 @@ ul {
 /*NavBar - Optins container*/
 
 .classy-nav-container .classy-navbar .classynav ul li {
-  width: 100px;
+  width: 150px;
 }
 .classy-nav-container .classy-navbar .classynav ul li a {
   margin: 0 auto;
   text-align: center;
   padding: 0 0px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 14px; /*hover animation in animations.js*/
   color: var(--secondary-color);
   text-transform: capitalize;
 }
@@ -1624,29 +1624,56 @@ margin-bottom: 40px; }
 }
 
 
-  .single-footer-widget .widget-title {
-    color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    display: block; }
-  .single-footer-widget .footer-contact {
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    margin: 0;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-    .single-footer-widget .footer-contact a {
-      font-size: 14px;
-      color: #FFFFFF;
-    }
-    .single-footer-widget .footer-contact a i {
-      display: inline-block;
-      margin-right: 5px;
-      color: #ffffff;
-    }
+.single-footer-widget .widget-title {
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  display: block; }
+.single-footer-widget .footer-contact {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.single-footer-widget .footer-contact a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.single-footer-widget .footer-contact a i {
+  display: inline-block;
+  margin-right: 5px;
+  color: #ffffff;
+}
+/*ICONOS*/
+.single-footer-widget .footer-contact .icon-content {
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+  float: left;
+}
+.single-footer-widget .footer-contact .icon-vertical {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single-footer-widget .footer-contact .icon-horizontal {
+  height: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single-footer-widget .footer-contact .icon-square {
+  width: 100%;
+  height: 100%;
+}
+
+
+
 .iconcolor {
   color: #ffffff;
 }

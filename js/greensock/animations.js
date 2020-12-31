@@ -13,10 +13,10 @@ window.addEventListener("load", function() {
 var navbarTab = $(".classynav ul li a");
 for (var i=0; i<navbarTab.length; i++) {
   navbarTab[i].addEventListener("mouseover", function() {
-    TweenMax.to(this, 0.1, {fontSize: 16});
+    TweenMax.to(this, 0, {fontSize: 14});
   });
   navbarTab[i].addEventListener("mouseout", function() {
-    TweenMax.to(this, 0.1, {fontSize: 14});
+    TweenMax.to(this, 0, {fontSize: 14});
   });
 }
 
