@@ -567,7 +567,7 @@ ul {
 
 
 
-/***** CUSTOM SLIDER *****/
+/****** CUSTOM SLIDER ******/
 .welcome-welcome-slide {
   position: relative;
   z-index: 2;
@@ -667,7 +667,8 @@ ul {
 
 
 
-/*BURBUJAS*/
+
+/****** BURBUJAS ******/
 .bubbles_bar_container {
 	height:50px;
   width: 100%;
@@ -757,6 +758,29 @@ margin-bottom: 40px; }
 @media only screen and (max-width: 767px) {
   .welcome-text p {
     font-size: 16px; } }
+
+
+
+
+
+/****** VALUES BOX ******/
+.value_box {
+  height: 280px;
+  border: 1px solid #EDEDED;
+  padding: 20px;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .value_box {
+    height: 310px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .value_box {
+    height: 390px; } }
+@media only screen and (max-width: 767px) {
+  .value_box {
+    height: 220px; } }
+
+
 
 
 
