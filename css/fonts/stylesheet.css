@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Instant Harmony Lite DEMO';
+    src: url('https://realpacifico.com/css/fonts/InstantHarmonyLiteDEMO-Regular.woff2') format('woff2'),
+        url('https://realpacifico.com/css/fonts/InstantHarmonyLiteDEMO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Instant Harmony DEMO';
+    src: url('https://realpacifico.com/css/fonts/InstantHarmonyDEMO-Regular.woff2') format('woff2'),
+        url('https://realpacifico.com/css/fonts/InstantHarmonyDEMO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

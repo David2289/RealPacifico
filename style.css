@@ -59,6 +59,9 @@ Last Update: Dec 05, 2018
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/style.css);
+@import url("https://realpacifico.com/css/fonts/stylesheet.css"); /*Importing custom fonts*/
+
+
 * {
   margin: 0;
   padding: 0; }
@@ -97,7 +100,7 @@ li {
 p {
   line-height: 1.9;
   color: #707070;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400; }
 
 img {
@@ -284,6 +287,12 @@ ul {
 .section-padding-50-0 {
   padding-top: 50px;
   padding-bottom: 0; }
+
+
+.section-margin-100-50 {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+
 
 .height-400 {
   height: 400px; }
@@ -600,11 +609,11 @@ ul {
   width: 60%;
 	position:absolute;
 	margin:0;
-	font-size:45px;
   color: white;
 	top:15%;
 	left: 7%;
-	font-family: "HelveticaNeue-Thin";
+  font-family: 'Instant Harmony DEMO';
+  font-size: 55px;
   z-index: 10;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -628,8 +637,9 @@ ul {
 
 .custom_slide_subtitle {
 	width: 60%;
-	position: absolute;
-	font-size: 25px;
+  position: absolute;
+  font-family: 'Instant Harmony Lite DEMO';
+	font-size: 35px;
   color: white;
 	top: 45%;
 	right: 10%;
@@ -639,21 +649,21 @@ ul {
   .custom_slide_subtitle {
     width: 65%;
     right: 8%;
-    font-size:22px;
+    font-size:32px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .custom_slide_subtitle {
     width: 70%;
     right: 6%;
-    font-size:18px;
+    font-size:28px;
   }
 }
 @media only screen and (max-width: 767px) {
   .custom_slide_subtitle {
     width: 78%;
     right: 5%;
-    font-size:16px;
+    font-size:26px;
   }
 }
 
@@ -765,20 +775,20 @@ margin-bottom: 40px; }
 
 /****** VALUES BOX ******/
 .value_box {
-  height: 280px;
+  height: 340px;
   border: 1px solid #EDEDED;
   padding: 20px;
   margin-top: 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .value_box {
-    height: 310px; } }
+    height: 370px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .value_box {
-    height: 390px; } }
+    height: 520px; } }
 @media only screen and (max-width: 767px) {
   .value_box {
-    height: 220px; } }
+    height: 260px; } }
 
 
 .value_box .icon-content {
@@ -999,18 +1009,13 @@ margin-bottom: 40px; }
 
 /****** ENROLLMENT - INFO AREA ******/
 .enrollment_info_content {
-  height: 450px;
+  height: 250px;
   border: 1px solid #EDEDED;
   padding: 20px;
   margin-top: 30px;
 }
 
-.enrollment_info_content img {
-  height: 100px;
-  margin-bottom: 50px;
-}
-
-.enrollment_info_content p {
+.enrollment_info_content h4 {
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -1055,6 +1060,7 @@ margin-bottom: 40px; }
 .single-service--area ul li {
   list-style-type: circle;
   margin-top: 10px;
+  font-size: 16px;
 }
 
 
@@ -1104,7 +1110,7 @@ margin-bottom: 40px; }
       .single-skills-area h6 {
         font-size: 14px; } }
 
-.dento-border {
+.section-border {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -1193,11 +1199,11 @@ margin-bottom: 40px; }
       height: 130px; } }
 
 .breadcumb-area .title {
-  font-size: 45px;
   margin-bottom: 0;
   color: #ffffff;
   text-align: center;
-  font-family: "HelveticaNeue-Thin";
+  font-family: 'Instant Harmony DEMO';
+  font-size: 55px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcumb-area .title {
