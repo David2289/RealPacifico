@@ -66,11 +66,18 @@ Last Update: Dec 05, 2018
   margin: 0;
   padding: 0; }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: var(--background-color);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  width: 100%;
+  height: 100%; }
 
 h1,
 h2,
@@ -1009,7 +1016,7 @@ ul {
   height: 76px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 10px; 
+  margin: 0 auto 10px;
 }
 .single-service--area .icon-- img {
   position: absolute;
@@ -1715,6 +1722,33 @@ ul {
   margin-right: auto;
 }
 .single-footer-widget .footer-contact .icon-square {
+  width: 100%;
+  height: 100%;
+}
+
+.label_conditions {
+  font-size: 16px;
+  font-weight: normal;
+}
+.new_icon_square {
+  width: 20px;
+  height: 100%;
+  margin-right: 20px;
+  float: left;
+}
+
+.button_condition_rules {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.pdf_content {
+  height: 100%;
+}
+
+iframe {
+  max-height: 100%;
+  max-width: 100%;
   width: 100%;
   height: 100%;
 }
